@@ -14,7 +14,6 @@ export const styles = StyleSheet.create({
         alignSelf: 'center',
         fontSize: 24,
         color: '#EFF3F5'
-        
     },
 
     imageStyle: {
@@ -48,10 +47,8 @@ export const styles = StyleSheet.create({
       backgroundColor: '#1c313a',
       height: 50,
       paddingTop: 10,
-      borderTopLeftRadius: 20,
-      borderTopRightRadius: 20,
-      borderColor: '#fdffff',
-      borderWidth: .15,
+      borderTopLeftRadius: 30,
+      borderTopRightRadius: 30,
     },
 
     bttStyle: {

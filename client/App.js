@@ -13,8 +13,7 @@ export default function App() {
 
   const getImages= () => {
 
-    axios('http://10.0.2.2:3001/images')
-    // axios('http://localhost:3001/images')
+    axios('https://mini-carousel-app.herokuapp.com/images')
     .then(result =>{ 
       
       setBlocks(()=>result.data)
@@ -72,8 +71,6 @@ export default function App() {
   return (
     <View style={styles.container}>
 
-      {/* <View style={styles.imageContainer} > */}
-
       {blocks.length > 0 ?
       <View>
       <View style={styles.titleContainer}>
@@ -94,7 +91,7 @@ export default function App() {
       </View>
           : <Text style={styles.textStyle}>Loading...</Text>}
 
-      {/* </View> */}
+      
 
       <View style={styles.buttons}>
 
@@ -115,22 +112,6 @@ export default function App() {
       >
         <Text style={blocks.length > 0 && page === blocks.length - 1 ? styles.textBttnDisable : styles.textBttn}>{'>'}</Text>
       </TouchableOpacity>
-
-      {/* <Button
-      style={styles.bttStyle}
-      title='<'
-      onPress={() => handleBttn('prev')}
-      name='prev'
-      disabled={page === 0}
-      />
-
-      <Button
-      style={styles.bttStyle}
-      title='>'
-      onPress={() => handleBttn('next')}
-      name='next'
-      disabled={blocks.length > 0 ? page === blocks.length - 1 : false}
-      /> */}
 
       </View>
 
