@@ -9,5 +9,7 @@ Hi! This is a mini carousel app, to run this app you should follow this steps (a
 6. You can use your cell phone, for that you have to install <a href='https://play.google.com/store/apps/details?id=host.exp.exponent&hl=es&gl=US'>"Expo Go"</a> or you can use a phone emulator like <a href='https://developer.android.com/studio' target="_blank"> "Android Studio"</a>
 7. If you choose to use an emulator, you have to click in the option run in a IOS/Android emulator.
 8. Ready! You can use the mini app.
-  
+
+
+To see how the application works: <a href='https://www.youtube.com/watch?v=ex85W-54zs0&ab_channel=JavierCastro'>Video<a/>
   
