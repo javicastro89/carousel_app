@@ -15,7 +15,6 @@ export default function App() {
 
     axios('https://mini-carousel-app.herokuapp.com/images')
     .then(result =>{ 
-      
       setBlocks(()=>result.data)
       })
     .catch(error => console.error(error))
