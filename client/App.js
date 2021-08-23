@@ -20,7 +20,6 @@ export default function App() {
       .catch(error => console.error(error))
   }
 
-
   const handleBttn = (event) => {
 
     if (event === 'next') setPage((prev) => prev += 1)
