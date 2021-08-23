@@ -4,10 +4,12 @@ const images = require('./routes/images')
 const morgan = require('morgan')
 const cors = require('cors')
 
-const port = 3001
+require("dotenv").config();
 
 server.use(cors())
 server.use(morgan('dev'))
 server.use('/', images)
 
-server.listen(port, () => console.log('server listening at', port))
+server.listen(process.env.PORT, () => {
+    console.log(`Server Port ${process.env.PORT}`);
+  });
