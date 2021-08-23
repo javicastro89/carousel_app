@@ -9,8 +9,6 @@ export default function App() {
   const [blocks, setBlocks] = useState([])
   const [page, setPage] = useState(0)
 
-
-
   const getImages = () => {
 
     axios('https://mini-carousel-app.herokuapp.com/images')
